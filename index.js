@@ -4,21 +4,18 @@ const app = express();
 app.use(express.json());
 
 let books = [
-  { id: 1, title: "The Alchemist", author: "Paulo Coelho" },
+  { id: 1, title: "Spiderman", author: "AJAY DEVGAN" },
   { id: 2, title: "Harry Potter", author: "J.K. Rowling" },
-  { id: 3, title: "Atomic Habits", author: "James Clear" }
+  { id: 3, title: "cse", author: "vijay anthony" }
 ];
 
 let users = [
-  { id: 1, name: "Alice", history: ["Harry Potter"] },
-  { id: 2, name: "Bob", history: [] }
+  { id: 1, name: "salman", history: ["Harry Potter"] },
+  { id: 2, name: "sharukh", history: [] }
 ];
 
 app.get("/", (req, res) => {
-  res.send("Library API is working");
-});
 
-app.get("/books", (req, res) => {
   res.json(books);
 });
 
