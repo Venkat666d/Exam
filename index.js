@@ -4,9 +4,9 @@ const app = express();
 app.use(express.json());
 
 let books = [
-  { id: 1, title: "Spiderman", author: "AJAY DEVGAN" },
-  { id: 2, title: "Harry Potter", author: "J.K. Rowling" },
-  { id: 3, title: "cse", author: "vijay anthony" }
+  { id: 1, title: "Spiderman", author: "Yasir nisar" },
+  { id: 2, title: "Harry Potter", author: "Yasir nisar" },
+  { id: 3, title: "cse", author: "Yasir nisar" }
 ];
 
 let users = [
