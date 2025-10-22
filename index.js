@@ -16,8 +16,13 @@ let users = [
 
 app.get("/", (req, res) => {
 
+ res.send("Library API is working - use /users to get users history and /books for books route ");
+});
+
+app.get("/books", (req, res) => {
   res.json(books);
 });
+
 
 app.get("/users", (req, res) => {
   res.json(users);
